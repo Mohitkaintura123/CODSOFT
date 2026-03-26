@@ -1,25 +1,24 @@
-# Customer Churn Prediction using Machine Learning
+#  Customer Churn Prediction using Machine Learning
 
-##  Overview
+##  Overview  
 This project predicts whether a customer will churn (leave a service) using machine learning techniques on a banking dataset.
 
-## Objective
+##  Objective  
 To identify customers likely to churn so that businesses can take preventive actions.
 
 
-
-## Dataset
-The dataset contains customer information such as:
-- Age
-- Balance
-- Credit Score
-- Geography
-- Number of Products
-- Activity status
-
+## Dataset  
+The dataset contains customer information such as:  
+- Age  
+- Balance  
+- Credit Score  
+- Geography  
+- Number of Products  
+- Activity status  
 
 
-##  Workflow
+
+##  Workflow  
 
 1. Data Loading & Inspection  
 2. Exploratory Data Analysis (EDA)  
@@ -32,16 +31,17 @@ The dataset contains customer information such as:
 9. SHAP Explainability  
 
 
-## Models Used
+
+##  Models Used  
 
 - Logistic Regression  
 - Random Forest  
 - Gradient Boosting  
-- **XGBoost (Best Model)**  
+- **XGBoost (Best Model )**  
 
 
 
-## Final Results
+## Final Results  
 
 - Accuracy: **85%**  
 - Precision: **63%**  
@@ -50,8 +50,21 @@ The dataset contains customer information such as:
 - ROC-AUC: **0.87**  
 
 
+##  Model Performance Visualization  
 
-## Key Insights
+### ROC Curve  
+
+![ROC Curve](roc_curve.jpg)
+
+
+
+### Feature Importance  
+
+![Feature Importance](feature_importance.png)
+
+
+
+##  Key Insights  
 
 - Older customers are more likely to churn  
 - Inactive users show higher churn rates  
@@ -59,7 +72,7 @@ The dataset contains customer information such as:
 
 
 
-##  Techniques Used
+##  Techniques Used  
 
 - SMOTE (Handling Imbalanced Data)  
 - Cross Validation  
@@ -68,7 +81,7 @@ The dataset contains customer information such as:
 
 
 
-##  Business Impact
+##  Business Impact  
 
 - Helps identify high-risk customers  
 - Improves retention strategies  
@@ -76,7 +89,7 @@ The dataset contains customer information such as:
 
 
 
-##  Tech Stack
+##  Tech Stack  
 
 - Python  
 - Pandas, NumPy  
@@ -87,16 +100,16 @@ The dataset contains customer information such as:
 
 
 
-##  Files
+## Files  
 
-- notebook.ipynb → Full ML pipeline  
-- best_model.pkl → Trained model  
-- scaler.pkl → Data scaler  
-- requirements.txt → Dependencies  
+- `notebook.ipynb` → Full ML pipeline  
+- `best_model.pkl` → Trained model  
+- `scaler.pkl` → Data scaler  
+- `requirements.txt` → Dependencies  
 
 
 
-## Future Improvements
+##  Future Improvements  
 
 - Deploy using Streamlit  
 - Add API integration  
@@ -104,8 +117,10 @@ The dataset contains customer information such as:
 
 
 
-##  Acknowledgement
+##  Acknowledgement  
 
-This project was completed as part of the **CODSOFT Machine Learning Internship**.
+This project was completed as part of the **CODSOFT Machine Learning Internship**.  
 
 
+
+ If you found this project helpful, consider giving it a star!
