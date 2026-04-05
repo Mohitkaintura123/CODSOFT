@@ -1,0 +1,13 @@
+Credit Card Fraud Detection Dataset
+
+Source:
+https://www.kaggle.com/datasets/kartik2112/fraud-detection
+
+Files used in this project:
+- fraudTrain.csv
+- fraudTest.csv
+
+Description:
+Simulated credit card transactions generated using the Sparkov simulator.
+The dataset includes both legitimate and fraudulent transactions.
+Target variable: is_fraud (0 = normal, 1 = fraud).
