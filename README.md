@@ -1,4 +1,4 @@
-CodSoft Machine Learning Internship
+## CodSoft Machine Learning Internship
 
 This repository contains the projects completed during my Machine Learning Internship at CodSoft.
 
@@ -8,13 +8,13 @@ During this internship I worked on data preprocessing, feature engineering, mode
 
 ---
 
-Projects Completed
+## Projects Completed
 
 1. Credit Card Fraud Detection
 
 This project focuses on detecting fraudulent credit card transactions using machine learning techniques.
 
-Key Features
+## Key Features
 
 - Data preprocessing and exploratory data analysis
 - Handling highly imbalanced fraud datasets
@@ -22,7 +22,7 @@ Key Features
 - Model training using XGBoost
 - Threshold optimization using Precision-Recall Curve
 
-Results
+## Results
 
 Precision : 0.84
 Recall : 0.74
@@ -30,7 +30,7 @@ F1 Score : 0.78
 
 The model successfully identifies fraudulent transactions while minimizing false alarms.
 
-Technologies used:
+## Technologies used:
 
 - Python
 - Pandas
@@ -46,7 +46,7 @@ Technologies used:
 
 This project predicts whether a customer will leave a service using machine learning models trained on customer banking data.
 
-Key Features
+## Key Features
 
 - Data preprocessing and feature scaling
 - Handling class imbalance using SMOTE
@@ -54,7 +54,7 @@ Key Features
 - Hyperparameter tuning
 - Model explainability using SHAP
 
-Results
+## Results
 
 Accuracy : 85%
 F1 Score : 64%
@@ -62,7 +62,7 @@ ROC-AUC : 0.87
 
 The model helps businesses identify customers likely to churn so they can take preventive action.
 
-Technologies used:
+## Technologies used:
 
 - Python
 - Pandas
@@ -80,7 +80,7 @@ This project implements a character-level LSTM neural network to generate text s
 
 The dataset was built by collecting research papers and extracting text from PDFs.
 
-Key Features
+## Key Features
 
 - Automated dataset creation from research papers
 - Character-level language modeling
@@ -88,7 +88,7 @@ Key Features
 - Text generation based on seed prompts
 - Interactive interface using Gradio
 
-Technologies used:
+## Technologies used:
 
 - Python
 - TensorFlow / Keras
@@ -100,7 +100,7 @@ Technologies used:
 
 ---
 
-Repository Structure
+## Repository Structure
 
 CODSOFT
 │
@@ -114,7 +114,7 @@ CODSOFT
 
 ---
 
-Skills Gained
+## Skills Gained
 
 During this internship I gained hands-on experience in:
 
