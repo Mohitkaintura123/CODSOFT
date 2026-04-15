@@ -1,17 +1,17 @@
 # LSTM Research Paper Text Generator
 
 ## Overview
-This project implements a **Character-Level LSTM Language Model** trained on machine learning research papers to generate scientific-style text.
+This project implements a **Character-Level LSTM Language Model** trained on machine learning research papers to generate **scientific-style text**.
 
 The system automatically collects **trending research papers**, downloads their PDFs from **arXiv**, extracts the text, and builds a dataset used to train the model. The trained LSTM can then generate **research-style paragraphs** similar to academic writing.
 
-This project demonstrates the use of **deep learning for natural language generation using real research paper data**.
+This project demonstrates **deep learning-based text generation using real research paper data**.
 
 ---
 
 ## Data Sources
 
-The dataset used in this project was created automatically from publicly available research papers.
+The dataset used in this project was automatically created using publicly available research papers.
 
 Data was collected from:
 
@@ -23,49 +23,49 @@ https://arxiv.org
 
 The Hugging Face trending page provides links to recent research papers, which are then downloaded as PDFs from arXiv.
 
-The text is extracted from these PDFs and combined into a dataset file.
-
 ---
 
 ## Dataset
 
-The dataset was built using approximately **50 research papers** downloaded from arXiv.
+Approximately **50 research papers** were downloaded and processed.
 
-After extracting text from the PDFs, the combined dataset is saved as:
+The text extracted from these PDFs is combined into a dataset file:
 
 paper.txt
 
 Dataset statistics:
 
-• ~27,000+ words  
-• Research content from multiple machine learning papers  
-• Cleaned text used for training the language model  
+- ~27,000+ words
+- Extracted from ~50 research papers
+- Cleaned research text used for training the model
 
 ---
 
 ## Project Pipeline
 
-Trending ML Papers (HuggingFace)
-        ↓
-arXiv Paper Links
-        ↓
-PDF Download
-        ↓
-Text Extraction
-        ↓
-Dataset Creation (paper.txt)
-        ↓
-Character-Level LSTM Training
-        ↓
-Scientific Text Generation
-        ↓
-Gradio Interface
+Trending ML Papers (HuggingFace)  
+↓  
+arXiv Paper Links  
+↓  
+Automatic PDF Download  
+↓  
+PDF Text Extraction  
+↓  
+Dataset Creation (paper.txt)  
+↓  
+Character-Level LSTM Training  
+↓  
+Research Style Text Generation  
+↓  
+Gradio Interactive Interface  
 
 ---
 
 ## Model Architecture
 
-The model is a **Character-Level LSTM network** implemented using TensorFlow/Keras.
+The project uses a **Character-Level LSTM neural network** implemented with TensorFlow/Keras.
+
+Architecture:
 
 Embedding Layer  
 ↓  
@@ -79,43 +79,38 @@ Dropout
 ↓  
 Dense Softmax Output Layer  
 
-Training parameters:
+Training Parameters:
 
-• Sequence length: 100 characters  
-• Step size: 3  
-• Batch size: 256  
-• Optimizer: Adam  
-• Loss: Sparse Categorical Crossentropy  
-
-Early stopping is used to prevent overfitting.
+- Sequence Length: 100 characters  
+- Step Size: 3  
+- Batch Size: 256  
+- Optimizer: Adam  
+- Loss Function: Sparse Categorical Crossentropy  
+- EarlyStopping used to prevent overfitting  
 
 ---
 
-## Training
+## Training Convergence
 
-The model learns patterns in the dataset by predicting the **next character in a sequence**.
+Below is the training loss curve showing **model convergence over epochs**.
 
-Training uses the dataset stored in:
+![LSTM Training Loss](images/training_loss.png)
 
-paper.txt
-
-Training is performed using **TensorFlow/Keras** and can be run on **Google Colab GPU**.
+The plot shows a steady decrease in **Sparse Categorical Crossentropy Loss**, indicating that the model is successfully learning patterns from the research paper dataset.
 
 ---
 
 ## Text Generation
 
-After training, the model can generate text using a seed prompt.
+Once the model is trained, it can generate text based on a **seed prompt**.
 
-Example prompt:
+Example Prompt:
 
 The machine learning model learns representations
 
-Example generated output:
+Example Generated Output:
 
-the model demonstrates improved performance in large scale
-experiments while maintaining spatial consistency across
-dynamic environments.
+the machine learning model learns representations that capture long-term dependencies across sequential data while improving generalization performance in large-scale experiments.
 
 Temperature parameter controls creativity:
 
@@ -132,10 +127,10 @@ The project includes a **Gradio interface** that allows users to generate resear
 
 Users can:
 
-• Enter a prompt  
-• Adjust temperature  
-• Select output length  
-• Generate text instantly  
+- Enter a prompt
+- Adjust temperature
+- Choose generation length
+- Generate research-style text instantly
 
 ---
 
@@ -151,13 +146,31 @@ Gradio
 
 ---
 
+## Installation
+
+Install required dependencies:
+
+pip install tensorflow pypdf requests gradio matplotlib numpy
+
+---
+
+## Running the Project
+
+1. Collect research papers and build dataset  
+2. Extract text from PDFs into paper.txt  
+3. Train the LSTM model  
+4. Generate research-style text using the trained model  
+5. Launch the Gradio interface
+
+---
+
 ## Future Improvements
 
-• Train on larger datasets (100k+ words)  
-• Use word-level language models  
-• Experiment with Transformer models  
-• Improve dataset cleaning  
-• Deploy as a web application  
+- Train on larger datasets (100k+ words)
+- Use word-level language models
+- Experiment with Transformer-based models
+- Improve dataset cleaning pipeline
+- Deploy as a web application
 
 ---
 
